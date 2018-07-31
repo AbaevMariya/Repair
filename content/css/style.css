@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+body {   
+    background: url("/content/img/background.jpg");   
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;   
+}
+
+/*Header*/
+.navbar {
+    font-family: "Lato";
+    border-bottom-style:double;
+    border-bottom-color: black;
+}
+
+.collapse.navbar-nav.nav-item.bigSize a: hover {
+    font-size: 2em;   
+}
+
+
+/*Footer*/
+div.footerRepair {
+    background-color: #e6e6e6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+div.mid {
+    padding: 20px;
+    margin: 0 auto; /*0- сверху и снизу, а ауто - слева и справа -отцентрирует */  
+}
+
+/*Content*/
+/*Home*/
+.jumbotron p {
+    text-indent: 1.5em;
+    line-height: 1.5; 
+}
+
+.jumbotron p.letter:first-letter {
+    color: #00BFFF;
+    font-weight: 500;
+    font-size: 1.2em;
+    text-shadow: black 1px 1px 0, black -1px -1px 0, 
+                 black -1px 1px 0, black 1px -1px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+}
+
+h1.fontShadow {
+    color: #00BFFF;
+    font-weight: 500;    
+    text-shadow: black 1px 1px 0, black -1px -1px 0, 
+                 black -1px 1px 0, black 1px -1px 0;
+}
+
+p {
+    line-height: 16px;    
+}
+
+.container {
+   margin-bottom: 100px;
+   margin-top: 100px;
+    
+}
+
+.services {   
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+    background-color: #e6e6e6;
+}
+
+.cardShadow {
+    box-shadow: 1px 1px 5px #777; 
+}
+
+/*Project*/
+.cardOpacity {
+    background-color: rgba(0,0,0,0.5);
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+    color: #fff;
+}
+
+.opacitySmall {
+    opacity: 1;
+}
+
+/*gallery*/
+.image {
+	margin:0px; 
+	float:left;
+	cursor:pointer;
+	max-height:300px;
+    box-shadow: 1px 1px 5px #777; 
+}
+
+.popup {
+	position: absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	display:none;
+	text-align:center;
+}
+
+.popup_bg {
+	background:rgba(0,0,0,0.4);
+	position:fixed;
+	z-index:1;
+	height:100%;
+	width:100%;
+}
+
+
+.popup_img {
+	position: fixed;
+	margin:120px -450px;
+	z-index:2;
+	max-height:80%;
+	max-width:80%;
+}
+
+/*Adaptive design*/
+
+@media screen and (max-width: 1000px) { /*If the screen resolution is less than 999 pixels, then the following styles are executed*/    
+.popup_img {    
+	margin:150px -400px;	
+}
+    
+}
+
+@media screen and (max-width: 640px) {   
+   .popup_img {    
+	margin:250px -250px;	
+}
+    
+}
+
+
+/*About*/
+.boxPadding {
+    padding-top: 50px;
+}
+
+/*About and Recomend*/
+
+.boxShadow {
+    box-shadow: -5px -5px 41px 0px #316060 inset;
+}
+
+.boxShadow p {
+    text-indent: 1.5em;
+    line-height: 1.5;    
+}
+
+/*Recomend and Contact*/
+.cardRecomend {   
+    border: 1px solid #fff;
+  /*  box-shadow: 0 0 10px rgba(0,0,0,0.5); */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+    color: #fff;
+ 
+}
+.cardOpacityRecomend {
+     background-color: rgba(0,0,0,0.4);
+}
+
+/*Contact*/
+.stroke {   
+    font-weight: 500;    
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color: black;
+    
+}
+
+.cardOpacityContact {
+    background-color: rgba(0,0,0,0.4);
+ /*  background-color: #e6e6e6;*/
+}
+
+.contentSuccess {
+    background-color: #ADD8E6;
+    width: 570px;    
+    border-radius: 10px;
+    margin-bottom: 650px;
+    padding: 10px;
+}
+
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
+    border: 2px solid red;
+}
+
+input[disabled="disabled"] {
+    opacity: 0.4;
+    cursor: not-allowed !important;
+}
+
+
+/*Animation*/
+
+/*The starting CSS styles for the enter animation*/
+main.ng-enter {
+    transition: 0.5s linear all;
+    opacity: 0;
+}
+
+/*The finishing CSS styles for the enter animation*/
+main.ng-enter.ng-enter-active {
+    opacity: 1;
+}

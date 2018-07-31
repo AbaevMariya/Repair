@@ -1,0 +1,47 @@
+<div class="container">         
+  <div class="row justify-content-center">
+    <div class="col-sm-6" id="colorBox">
+       <div class="card cardOpacityContact cardRecomend">
+         <div class="card-body">
+            <h5 class="card-title stroke">For Ordering and Getting the Detailed Information please contact me:</h5>
+            <p class="card-text textShadow">phone: 054-9036023</p>
+            <p class="card-text">Email: deryuginm@gmail.com</p>
+            <h5 class="card-title stroke">LEAVE YOUR REQUEST:</h5>
+            
+             <form name="contactForm" class="needs-validation" ng-submit="sendMessage()" novalidate>
+               <div class="form-group">
+                 <label for="validationCustomUsername">Your Name</label>
+                 <input type="text" class="form-control" id="validationCustom01" name="name" placeholder="Enter your Name" ng-model="contact.name" ng-required="true" />
+                 <div ng-show="contactForm.name.$touched && contactForm.name.$invalid">
+                   <small style="color: red; display: block; text-align: center;">Enter a valid name</small>           
+                 </div>                
+               </div>                   
+               <div class="form-group">
+                  <label for="validationCustom02">Your Email address</label>
+                  <input type="email" class="form-control" id="validationCustom03" name="email" placeholder="Enter your Email" ng-model="contact.email" ng-required="true" />               
+                  <div ng-show="contactForm.email.$touched && contactForm.email.$invalid">
+                   <small style="color: red; display: block; text-align: center;">Enter a valid email</small>           
+                  </div>                 
+                </div>
+               <div class="form-group">
+                  <label for="validationCustom03">Your phone</label>
+                  <input type="number" class="form-control" id="validationCustom03" name="phone" placeholder="Enter your phone" ng-model="contact.phone" ng-required="true" />
+                  <div ng-show="contactForm.phone.$touched && contactForm.phone.$invalid">
+                   <small style="color: red; display: block; text-align: center;">Enter a valid phone</small>           
+                  </div>                  
+                </div>
+                <div class="form-group">
+                  <label for="validationCustom04">Your message</label>
+                     <textarea type="text" class="form-control" id="validationCustom04" name="message" placeholder="Your Message" ng-model="contact.message" ng-required="true"></textarea>
+                 </div> 
+                 <button class="btn btn-info" type="submit" value="Send" ng-disabled="contactForm.$invalid">Send</button>
+            </form>
+
+          </div>
+        </div>
+     </div>
+   </div>
+</div>     
+
+   
+  
