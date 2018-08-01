@@ -28,6 +28,10 @@ myRepairApp.config(['$routeProvider', '$locationProvider', function($routeProvid
       .when('/contact-success', {
         templateUrl: 'views/contact-success.html',
         controller: 'ContactController'
+    })
+       .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'RepairController'
     }).otherwise({
         redirectTo: '/home'
     });    
