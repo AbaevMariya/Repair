@@ -104,7 +104,7 @@ myRepairApp.controller('RepairController', ['$scope', function($scope){
 
 myRepairApp.controller('GalleryController', ['$scope', function($scope){
    
-  $scope.enlargPhoto = function(gallery){
+ /* $scope.enlargPhoto = function(gallery){
         $(".image").click(function(){	// Событие клика на маленькое изображение
 	  	var img = $(this);	// Получаем изображение, на которое кликнули
 		var src = img.attr('src'); // Достаем из этого изображения путь до картинки
@@ -120,7 +120,7 @@ myRepairApp.controller('GalleryController', ['$scope', function($scope){
 			}, 800);
 		});
 	});
-    }
+    }*/
     
     
     $scope.galleries = [
