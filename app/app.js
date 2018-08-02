@@ -31,7 +31,13 @@ myRepairApp.config(['$routeProvider', '$locationProvider', function($routeProvid
     })
        .when('/login', {
         templateUrl: 'views/login.html',
-        controller: 'RepairController'
+        controller: 'LoginController'
+        
+    })
+       .when('/dashboard', {
+        templateUrl: 'views/dashboard.html',
+        controller: 'LoginController'
+        
     }).otherwise({
         redirectTo: '/home'
     });    
@@ -262,3 +268,19 @@ myRepairApp.controller('ContactController', ['$scope', '$location', function($sc
         $location.path('/contact-success');
     };
 }]);
+
+
+myRepairApp.controller('LoginController', ['$scope', '$location', function($scope, $location){
+    $scope.submit = function(){
+        var name =  $scope.defaultLoginFormUserName;
+        var password = $scope.defaultLoginFormPassword;
+        if($scope.name == 'admin' &&  $scope.password == 'admin'){
+            $location.path('/dashboard');
+        } else {
+            alert('Wrong Stuff');
+        }
+        
+    };
+}]);
+
+
