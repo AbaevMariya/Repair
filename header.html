@@ -1,34 +1,78 @@
-<div class="container-fluid">
+<div class="container-fluid" ng-class="{ 'isRTL' : translation.isRTL }">
    <nav class="navbar navbar-expand-lg fixed-top navbar-light text-uppercase d-flex" style="background-color: #ADD8E6;">
       <a class="navbar-brand mb-0 h1" href="index.html">Rep<i class="fab fa-app-store"></i>irs</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+     
+       <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link bigSize" href="/index"><i class="fas fa-home"></i> <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link bigSize" href="/project">My Projects</a>
+            <a class="nav-link bigSize" href="/project">{{translation.headerNavigation.menuProject}}</a>
           </li>          
           <li class="nav-item">
-            <a class="nav-link bigSize" href="/about">About me</a>
+            <a class="nav-link bigSize" href="/about">{{translation.headerNavigation.menuAbout}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link bigSize" href="/recomend">Recomends</a>
+            <a class="nav-link bigSize" href="/recommend">{{translation.headerNavigation.menuRecommend}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link bigSize" href="/contact">Contacts</a>
+            <a class="nav-link bigSize" href="/contact">{{translation.headerNavigation.menuContact}}</a>
+          </li> 
+          
+          <li class="nav-item">
+            <a class="d-flex flex-row-reverse p-2 bd-highlight" href="/index" ng-click="translate('en')"><img src="content/img/UnitedKingdomFlag.png" class="rounded" /></a>
+          </li> 
+          <li class="nav-item">
+            <a class="d-flex flex-row-reverse p-2 bd-highlight" href="/index" ng-click="translate('ru')"><img src="content/img/RussiaFlag.png" class="rounded" /></a>
+          </li>
+          <li class="d-flex flex-row-reverse nav-item">
+            <a class="p-2 bd-highlight" href="/index" ng-click="translate('he')"><img src="content/img/IsraelFlag.png" class="rounded" /></a>
+          </li> 
+        </ul> 
+          
+      <!--  <div class="d-flex flex-row-reverse bd-highlight menuLang">
+          <div class="p-2 bd-highlight"><a href="/index" ng-click="translate('en')"><img src="content/img/UnitedKingdomFlag.png" class="rounded" /></a></div>
+          <div class="p-2 bd-highlight"><a href="/index" ng-click="translate('ru')"><img src="content/img/RussiaFlag.png" class="rounded" /></a></div>   
+          <div class="p-2 bd-highlight"><a href="/index" ng-click="translate('he')"><img src="content/img/IsraelFlag.png" class="rounded" /></a></div>-->
+          
+        <!--  <li class="navbar-nav nav-item">
+            <a class="nav-link bigSize" href="/login">Login</a>
+          </li>             </div>   
+          -->
+
+          <!--
+         <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link bigSize" href="/index"><i class="fas fa-home"></i> <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bigSize" href="/project">{{translation.headerNavigation.menuProject}}</a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link bigSize" href="/about">{{translation.headerNavigation.menuAbout}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bigSize" href="/recommend">{{translation.headerNavigation.menuRecommend}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bigSize" href="/contact">{{translation.headerNavigation.menuContact}}</a>
           </li>              
-        </ul>
-        <div class="d-flex flex-row-reverse bd-highlight">
-          <div class="p-2 bd-highlight"><a href="/index"><img src="content/img/UnitedKingdomFlag.png" class="rounded" /></a></div>
-          <div class="p-2 bd-highlight"><a href="/indexRu"><img src="content/img/RussiaFlag.png" class="rounded" /></a></div>   <div class="p-2 bd-highlight"><a href="/indexHe"><img src="content/img/IsraelFlag.png" class="rounded" /></a></div>
-          <li class="navbar-nav nav-item">
+        </ul> 
+       
+         <div class="d-flex flex-row-reverse bd-highlight menuLang">
+          <div class="p-2 bd-highlight"><a href="/index" ng-click="translate('en')"><img src="content/img/UnitedKingdomFlag.png" class="rounded" /></a></div>
+          <div class="p-2 bd-highlight"><a href="/index" ng-click="translate('ru')"><img src="content/img/RussiaFlag.png" class="rounded" /></a></div>   
+          <div class="p-2 bd-highlight"><a href="/index" ng-click="translate('he')"><img src="content/img/IsraelFlag.png" class="rounded" /></a></div>
+        <!--  <li class="navbar-nav nav-item">
             <a class="nav-link bigSize" href="/login">Login</a>
           </li>     
-        </div>  
+        </div>      
+-->
+        
       </div>
     </nav>
 </div>

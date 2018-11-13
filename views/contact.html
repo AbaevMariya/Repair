@@ -1,47 +1,51 @@
-<div class="container">         
+<div class="container" ng-class="{ 'isRTL' : translation.isRTL }">         
   <div class="row justify-content-center">
     <div class="col-sm-6" id="colorBox">
-       <div class="card cardOpacityContact cardRecomend">
+       <div class="card cardOpacityContact cardRecommend">
          <div class="card-body">
-            <h5 class="card-title stroke">For Ordering and Getting the Detailed Information please contact me:</h5>
-            <p class="card-text textShadow">phone: 054-9036023</p>
-            <p class="card-text">Email: deryuginm@gmail.com</p>
-            <h5 class="card-title stroke">LEAVE YOUR REQUEST:</h5>
+            <h5 class="card-title stroke">{{translation.contactForm.title}}</h5>
+            <p class="card-text textShadow">{{translation.contactForm.phone}}  054-8235217</p>
+            <p class="card-text">{{translation.contactForm.email}}  jackRepair@gmail.com</p>
+            <h5 class="card-title stroke">{{translation.contactForm.text}}</h5>
             
-             <form name="contactForm" class="needs-validation" ng-submit="sendMessage()" novalidate>
-               <div class="form-group">
-                 <label for="validationCustomUsername">Your Name</label>
-                 <input type="text" class="form-control" id="validationCustom01" name="name" placeholder="Enter your Name" ng-model="contact.name" ng-required="true" />
-                 <div ng-show="contactForm.name.$touched && contactForm.name.$invalid">
-                   <small style="color: red; display: block; text-align: center;">Enter a valid name</small>           
-                 </div>                
-               </div>                   
-               <div class="form-group">
-                  <label for="validationCustom02">Your Email address</label>
-                  <input type="email" class="form-control" id="validationCustom03" name="email" placeholder="Enter your Email" ng-model="contact.email" ng-required="true" />               
-                  <div ng-show="contactForm.email.$touched && contactForm.email.$invalid">
-                   <small style="color: red; display: block; text-align: center;">Enter a valid email</small>           
-                  </div>                 
-                </div>
-               <div class="form-group">
-                  <label for="validationCustom03">Your phone</label>
-                  <input type="number" class="form-control" id="validationCustom03" name="phone" placeholder="Enter your phone" ng-model="contact.phone" ng-required="true" />
-                  <div ng-show="contactForm.phone.$touched && contactForm.phone.$invalid">
-                   <small style="color: red; display: block; text-align: center;">Enter a valid phone</small>           
-                  </div>                  
-                </div>
-                <div class="form-group">
-                  <label for="validationCustom04">Your message</label>
-                     <textarea type="text" class="form-control" id="validationCustom04" name="message" placeholder="Your Message" ng-model="contact.message" ng-required="true"></textarea>
-                 </div> 
-                 <button class="btn btn-info" type="submit" value="Send" ng-disabled="contactForm.$invalid">Send</button>
-            </form>
+             <form name="contactFormUser" class="needs-validation" ng-submit="sendMessage()" novalidate>
+                 
+                   <div class="form-group">
+                     <label for="validationCustomUsername">{{translation.contactForm.labelUsername}}</label>
+                     <input type="text" class="form-control" id="name" name="name" placeholder="{{translation.contactForm.inputUserNamePlaceholder}}" ng-model="contact.name" ng-required="true" />
+                     <div ng-show="contactFormUser.name.$touched && contactFormUser.name.$invalid">
+                       <small style="color: red; display: block; text-align: center;">{{translation.contactForm.labelUserNameError}}</small>     
+                     </div>                
+                   </div>   
 
+                   <div class="form-group">
+                      <label for="validationCustom02">{{translation.contactForm.labelEmail}}</label>
+                      <input type="email" class="form-control" id="validationCustom03" name="email" placeholder="{{translation.contactForm.inputEmailPlaceholder}}" ng-model="contact.email" ng-required="true" />               
+                      <div ng-show="contactFormUser.email.$touched && contactFormUser.email.$invalid">
+                       <small style="color: red; display: block; text-align: center;">{{translation.contactForm.labelEmailError}}</small>           
+                      </div>                 
+                    </div>
+
+                   <div class="form-group">
+                      <label for="validationCustom03">{{translation.contactForm.labelPhone}}</label>
+                      <input type="number" class="form-control" id="validationCustom03" name="phone" placeholder="{{translation.contactForm.inputPhonePlaceholder}}" ng-model="contact.phone" ng-required="true" />
+                      <div ng-show="contactFormUser.phone.$touched && contactFormUser.phone.$invalid">
+                       <small style="color: red; display: block; text-align: center;">{{translation.contactForm.labelPhoneError}}</small>           
+                      </div>                  
+                    </div>
+
+                    <div class="form-group">
+                      <label for="validationCustom04">{{translation.contactForm.labelMessage}}</label>
+                         <textarea type="text" class="form-control" id="validationCustom04" name="message" placeholder="{{translation.contactForm.inputMessagePlaceholder}}" ng-model="contactForm.message" ng-required="true"></textarea>
+                     </div> 
+
+                     <div class="form-group">
+                        <button class="btn btn-info" type="submit" value="Send" ng-disabled="contactFormUser.$invalid">{{translation.contactForm.ButtonMessage}}</button>
+                     </div>
+                </form>             
           </div>
         </div>
      </div>
    </div>
-</div>     
-
-   
+</div>  
   

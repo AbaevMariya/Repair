@@ -1,58 +1,26 @@
-<div class="jumbotron">
-  <h1 class="display-4 text-center">Apartment renovation - how to start?</h1>
-  <p class="lead text-justify letter">Have you decided to buy an apartment that needs repair before you can live there? Have you decided to renovate an apartment in which you already live? Looking for a reliable and professional repair contractor? Reconstruction for everyone that saves you on thousands of shekels.</p>
+<div class="jumbotron" ng-class="{ 'isRTL' : translation.isRTL }">
+  <h1 class="display-4 text-center">{{translation.repairTitle.title}}</h1>
+  <p class="lead text-justify letter">{{translation.repairTitle.text}}</p>
   <hr class="my-4">
   <p class="lead">
-    <a class="btn btn-info btn-lg btn-block" href="#" role="button">Call: 054-903-60-23</a>
+    <a class="btn btn-info btn-lg btn-block" href="#" role="button">{{translation.repairTitle.phone}} 054-903-60-23</a>
   </p>
 </div>
 
-<!--<div class="container services">
-    <h1 class="display-4 text-center mt-5 fontShadow">Services</h1>
-    <div class="container mt-5">
-        <div class="card-deck" ng-repeat="repair in repairs" style="min-height: 100%; min-height: 100%; float: left; padding-left: 20px;">
-          <div class="card" style="width: 12rem;">
-            <img class="card-img-top" ng-src="{{repair.thumb}}" style="border-bottom: 1px solid black;">
-            <div class="card-body">
-              <h5 class="card-title">{{repair. typeOfRepair}}</h5>
-            </div>                
-          </div> 
-         </div>                 
-     </div>
-</div>-->
-    
-
-<!--<div class="container services">
-    <h1 class="display-4 text-center mt-5 fontShadow">Services</h1>
-    <div class="container mt-5">       
-        <div class="row" >          
-            <div class="card" ng-repeat="repair in repairs">
-              <img class="card-img-top" ng-src="{{repair.thumb}}" style="border-bottom: 1px solid black;">
-              <div class="card-body">
-                 <h5 class="card-title">{{repair.typeOfRepair}}</h5>
-              </div>
-            </div>
-          </div>        
-    </div>
-</div>-->
-
-
-<main role="main">
-   <!-- <div class="album ">-->
-        <div class="container services">
-         <h1 class="display-4 text-center mt-5 fontShadow">Services</h1>
-          <div class="row ">
-            <div class="col-md-4 " ng-repeat="repair in repairs">
-              <div class="card mb-4 cardShadow">
-                <img class="card-img-top" alt="Photo" style="height: 100%; width: 100%; display: block; border-bottom: 1px solid gray;" ng-src="{{repair.thumb}}" data-holder-rendered="true">
-                <div class="card-body">
-                  <h5 class="card-title">{{repair.typeOfRepair}}</h5>
-                </div>
-              </div>
-              </div>
-             </div>  
-           </div>
-       <!-- </div>   --> 
+<main role="main">   
+ <div class="container services">
+  <h1 class="display-4 text-center mt-5 fontShadow">{{translation.repairTitle.services}}</h1>
+  <div class="row ">
+    <div class="col-md-4 " ng-repeat="repair in repairs">
+      <div class="card mb-4 cardShadow imageAnimation">
+        <img class="card-img-top" alt="Photo" style="height: 100%; width: 100%; display: block; border-bottom: 1px solid gray;" ng-src="{{repair.thumb}}" data-holder-rendered="true">
+        <div class="card-body">
+          <h5 class="card-title">{{translation.repair.typeOfRepair}}</h5>
+        </div>
+       </div>
+      </div>
+     </div>  
+   </div>      
 </main> 
 
     

@@ -1,0 +1,232 @@
+{
+    "isRTL": false,
+    "indexTitle":
+        {
+            "title": "Repairs"
+            
+        },
+    
+    "headerNavigation":
+        {
+            "menuProject": "My Projects",
+            "menuAbout": "About me",
+            "menuRecommend": "Recommends",
+            "menuContact": "Contacts"   
+        },
+    
+    "repairTitle":
+        {
+            "title": "Apartment renovation - how to start?",
+            "text":"Have you decided to buy an apartment that needs repair before you can live there? Have you decided to renovate an apartment in which you already live? Looking for a reliable and professional repair contractor? Reconstruction for everyone that saves you on thousands of shekels.",
+            "phone": "Call:",
+            "services": "Services"
+        },
+
+    "repairs":   
+        [{
+        	"typeOfRepair": "Exterior finishing and painting at home",
+        	"thumb": "/content/img/1Exterior.jpg"
+        }, 
+        {
+        	"typeOfRepair": "Repair and erection of the roof",
+        	"thumb": "/content/img/2Roof.png"
+        }, 
+        {
+        	"typeOfRepair": "Warming of walls, waterproofing of walls and roofs",
+        	"thumb": "/content/img/3WarmingWalls.jpg"
+        },
+        {
+        	"typeOfRepair": "Working with plasterboard",
+        	"thumb": "/content/img/4Plasterboard.jpg"
+        },
+        {
+        	"typeOfRepair": "Whitewashing ceilings and walls",
+        	"thumb": "/content/img/5Ceiling.jpg"
+        },
+        {
+        	"typeOfRepair": "Wallpaper gluing, cornices",
+        	"thumb": "/content/img/6Wallpaper.jpg"
+        },
+        {
+        	"typeOfRepair": "Electricity",
+        	"thumb": "/content/img/7Electricity.jpg"
+        },
+        {
+        	"typeOfRepair": "Installation of ceramics",
+        	"thumb": "/content/img/8Ceramics.jpg"
+        },
+        {
+        	"typeOfRepair": "Door installation",
+        	"thumb": "/content/img/9Doors.jpg"
+        },
+        {
+        	"typeOfRepair": "Kitchen",
+        	"thumb": "/content/img/10kitchen.jpg"
+        }, 
+        {
+        	"typeOfRepair": "Bathroom",
+        	"thumb": "/content/img/11bathroom.jpg"
+        }, 
+        {
+        	"typeOfRepair": "Installation",
+        	"thumb": "/content/img/12Installation.jpg"
+        }
+        ],
+        
+    
+    "galleries":
+        [{
+            "name": "New kitchen",
+            "thumb": "/content/img/sl1.jpg",
+            "additionalPeroid": "9 mins"            
+        },
+        {
+            "name": "New kitchen",
+            "thumb": "/content/img/sl2.jpg",
+            "additionalPeroid": "9 mins"   
+        },
+        {
+            "name": "New kitchen",
+            "thumb": "/content/img/sl3.jpg",
+            "additionalPeroid": "9 mins"            
+        },
+        {
+            "name": "New kitchen for your taste",
+            "thumb": "/content/img/sl4.jpg",
+            "additionalPeroid": "9 mins"            
+        },
+        {
+            "name": "Pottery in the bathroom",
+            "thumb": "/content/img/sl5.jpg",
+            "additionalPeroid": "9 mins"            
+        },
+        {
+            "name": "Pottery in the bathroom",
+            "thumb": "/content/img/sl6.jpg",
+            "additionalPeroid": "9 mins"            
+        },
+        {
+            "name": "Pottery for your taste",
+            "thumb": "/content/img/sl7.jpg",
+            "additionalPeroid": "9 mins"            
+        },
+        {
+            "name": "Whitewashing and painting ceilings and walls",
+            "thumb": "/content/img/sl8.jpg",
+            "additionalPeroid": "9 mins"            
+        },
+        {
+            "name": "Doors for your taste",
+            "thumb": "/content/img/sl9.jpg",
+            "additionalPeroid": "9 mins"            
+        }],   
+     
+     "aboutTitle":
+        {
+            "title": "Hello, Friends!"
+        },
+    "abouts":
+        [{
+            "text": "My name is Jack and I've been doing repairs for 15 years. The most important thing for me is the quality of the services provided and satisfied customers."            
+        },
+        {
+            "text": "I do both cosmetic and capital repairs, minor repairs, as well as remodeling.Cosmetic repair - works on the surface, aimed at improving the appearance of the room. The overhaul is aimed at a comprehensive improvement of the condition of the premises, implying the replacement of communications, the complete dismantling of old finishes and communications with the replacement of them with new ones. A more complex version of it is the reconstruction, which also includes the work on moving partitions."
+        },
+        {
+            "text": "Why choose me?"
+        }],       
+
+    
+    "advantages": 
+        [{
+            "typeOfAdvantage": "Reliability and adherence to timetables"
+        },
+        {
+            "typeOfAdvantage": "Possibility of renovation package with interior designer"
+        },
+        {
+            "typeOfAdvantage": "Recommendations"
+        },
+        {
+            "typeOfAdvantage": "15 years of experience"
+        },
+        {
+            "typeOfAdvantage": "Cleaning at the completion of the renovation"
+        },
+        {
+            "typeOfAdvantage": "1 year warranty for the work"
+        },
+        {
+            "typeOfAdvantage": "Option for credit payments"
+        }],
+
+    "recommends": 
+        [{
+            "titleOfRecommend": "By: Orit Kahlon",
+            "textOfRecommend": "Thank you very much for the excellent service I received, the result is really beautiful, everyone gives compliments and feeling wonderful"            
+        },
+        {
+            "titleOfRecommend": "By: Oksana Gorohovski",
+            "textOfRecommend": "I turned to Jack from everything to replace all the plumbing in my house I got the lowest price I met the schedule and I also received a bonus to renovate a children's room as a gift"         
+        },
+        {
+            "titleOfRecommend": "By: Irina Brinsky",
+            "textOfRecommend": " A trustworthy and diligent guy made me a perfect job just always available for claims and demands know to work thoroughly and cleanly really satisfied thanks Jack"             
+        },
+        {
+            "titleOfRecommend": "By: Miri from Ashkelon",
+            "textOfRecommend": "Renovation for every pocket"              
+        },
+        {
+            "titleOfRecommend": "By: Linoy",
+            "textOfRecommend": "Thank you very much. The result is really beautiful"           
+        },
+        {
+            "titleOfRecommend": " From: Dina",
+            "textOfRecommend": "Thanks for all renovations. Four months ago Jack from every renovation made us a new bathroom !! To this day I get compliments and the result is perfect. In addition to my sister renovated his bedroom and living room almost half a house he has amazingly amazing results and the return to times that is the most important !!"             
+        },
+        {
+            "titleOfRecommend": "By: Kate from Netivot",
+            "textOfRecommend": "Thanks for the work you've done. Everything is done well and on time!"             
+        },
+        {
+            "titleOfRecommend": " By: Sharon ",
+            "textOfRecommend": "I received a very low bid and work done quickly and with unrivaled quality. Thousands thanks to the renovation"             
+        },
+        {
+            "titleOfRecommend": "By: Nick from Beer Sheva",
+            "textOfRecommend": "In the pre-holiday period (Pesach) I called for renovations for everyone and explained that I wanted to renovate the house and my budget was low. Believe it or not you can renovate a house for NIS 10,000 and get an amazing result soon"            
+        }],
+    
+    "contactForm": 
+        {
+            "labelUsername": "Your username",
+            "labelEmail": "Your email address",
+            "labelPhone": "Your phone",
+            "labelMessage": "Your message",
+            "inputUserNamePlaceholder": "Enter your Name",
+            "inputEmailPlaceholder": "Enter your Email",
+            "inputPhonePlaceholder": "Enter your phone",
+            "inputMessagePlaceholder": "Enter your message",
+            "labelUserNameError": "Enter a valid name",
+            "labelEmailError": "Enter a valid email",
+            "labelPhoneError": "Enter a valid phone",
+            "ButtonMessage": "Send",
+            "title": "For Ordering and Getting the Detailed Information please contact me:",
+            "phone": "phone:",
+            "email": "Email:",
+            "text": "LEAVE YOUR REQUEST:",
+            "textSuccess": "Thanks a bunch for getting in touch!"
+            
+        },  
+   
+    "footerText":
+        {
+            "text": "Design and development: Maria Abaeva"
+            
+        }
+    
+}
+
+
+

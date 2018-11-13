@@ -1,11 +1,10 @@
-    <div class="container boxPadding">         
+    <div class="container boxPadding" ng-class="{ 'isRTL' : translation.isRTL }">     <!--   {{ translation.isRTL }}-->
           <div class="jumbotron boxShadow">
-              <h1 class="display-4 text-center">Hello, Friends!</h1>
-              <p class="lead text-justify" ng-repeat="about in abouts">{{about.text}}</p>              
-                <ul type="circle">
-                   <li ng-repeat="advantage in advantages">{{advantage.typeOfAdvantage}}</li>        
-                </ul>                
+              <h1 class="display-4 text-center">{{translation.aboutTitle.title}}</h1>
+              <p class="lead text-justify" ng-repeat="about in translation.abouts">{{about.text}}</p>              
+              <ul type="circle">
+                  <li ng-repeat="advantage in translation.advantages">{{advantage.typeOfAdvantage}}</li>        
+               </ul>                
               <hr class="my-4">
           </div> 
       </div>   
-    

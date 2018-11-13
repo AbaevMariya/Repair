@@ -65,8 +65,7 @@ p {
 
 .container {
    margin-bottom: 100px;
-   margin-top: 100px;
-    
+   margin-top: 100px;    
 }
 
 .services {   
@@ -78,6 +77,8 @@ p {
 .cardShadow {
     box-shadow: 1px 1px 5px #777; 
 }
+
+div.imageAnimation:hover img { transform: scale(0.95); transition:transform 3s; } /*анимация фото anons img:hover - при наведении они увеличиваются- scale - масштаб, 2 - в 2 раза, если меньше 1 - он будет уменьшаться, 1.2 - увеличение картинки на 20%, transition - \ плавный переход, чтобы анимация была примененена не только к картинке, но и к самому блоку anons:hover img*/
 
 /*Project*/
 .cardOpacity {
@@ -161,14 +162,13 @@ p {
 }
 
 /*Recomend and Contact*/
-.cardRecomend {   
-    border: 1px solid #fff;
-  /*  box-shadow: 0 0 10px rgba(0,0,0,0.5); */
+.cardRecommend {   
+    border: 1px solid #fff;  
     box-shadow: 0 0 10px rgba(0,0,0,0.5); 
     color: #fff;
  
 }
-.cardOpacityRecomend {
+.cardOpacityRecommend {
      background-color: rgba(0,0,0,0.4);
 }
 
@@ -183,6 +183,7 @@ p {
 .cardOpacityContact {
     background-color: rgba(0,0,0,0.4);
  /*  background-color: #e6e6e6;*/
+    margin: 50px
 }
 
 .contentSuccess {
@@ -190,7 +191,7 @@ p {
     width: 570px;    
     border-radius: 10px;
     margin-bottom: 650px;
-    padding: 10px;
+    
 }
 
 input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
@@ -214,4 +215,10 @@ main.ng-enter {
 /*The finishing CSS styles for the enter animation*/
 main.ng-enter.ng-enter-active {
     opacity: 1;
+}
+
+.isRTL p, .isRTL ul, .isRTL li, .isRTL h5, .isRTL h1, .isRTL .form-group, .isRTL .contentSuccess, .isRTL .menuLang, .isRTL .collapse, .isRTL a
+{
+    direction: rtl;
+    text-align: right;
 }

@@ -1,0 +1,15 @@
+<div class="container" ng-class="{ 'isRTL' : translation.isRTL }">         
+  <div class="jumbotron boxShadow">
+    <div class="card-columns">
+      <div class="card cardOpacityRecommend cardRecommend"  ng-repeat="recommend in translation.recommends">
+        <div class="card-body">
+          <h5 class="card-title">{{recommend.titleOfRecommend}}</h5>
+          <p class="card-text text-justify">{{recommend.textOfRecommend}}.</p>
+        </div>
+      </div>
+    </div>
+  </div>        
+</div>  
+
+   
+    

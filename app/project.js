@@ -1,5 +1,5 @@
 $(document).ready(function() { // Ждём загрузки страницы
-    
+    console.log('file tested');
     $(document).on('click', '.image', function(){	// Событие клика на маленькое изображение
 	  	console.log('122321');
         var img = $(this);	// Получаем изображение, на которое кликнули
